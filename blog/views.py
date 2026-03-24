@@ -1,10 +1,26 @@
-from turtle import home
-
+from django.utils import timezone
 from django.shortcuts import render
-from django.http import HttpResponse
+
+posts = [
+    {# first post shown
+        'author': 'John Doe',
+        'title': 'Blog Post 1',
+        'content': 'First post content',
+        'date_posted': timezone.now(),
+    },
+    {#second post shown
+        'author': 'Jane Doe',   
+        'title': 'Blog Post 2',
+        'content': 'Second post content',
+        'date_posted': timezone.now(),
+    }
+]
 
 def home(request):
-    return HttpResponse("blog home")
+    context = {
+        'posts': posts
+    }
+    return render(request, 'blog/index.html', context)
 
 def about(request):
-    return HttpResponse("<h6>blog about</h6>")
+    return render(request, 'blog/about.html')

@@ -3,13 +3,13 @@ from django.shortcuts import render
 
 posts = [
     {# first post shown
-        'author': 'John Doe',
+        'author': 'person 1',
         'title': 'Blog Post 1',
         'content': 'First post content',
         'date_posted': timezone.now(),
     },
     {#second post shown
-        'author': 'Jane Doe',   
+        'author': 'person 2',   
         'title': 'Blog Post 2',
         'content': 'Second post content',
         'date_posted': timezone.now(),

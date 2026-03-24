@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    {% if title %}
+        <title>About page-description</title>
+    {%else%}
+        <title> About page </title>
+    {%endif%}
 </head>
 <body>
     <section class="container">
-        <h1>Welcome to the about page
-        </h1>
+        about section
     </section>
 </body>
 </html>

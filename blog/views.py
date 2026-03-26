@@ -1,5 +1,6 @@
 from django.utils import timezone
 from django.shortcuts import render
+from . models import Post
 
 posts = [
     {# first post shown
@@ -27,7 +28,7 @@ subposts = [
 ]
 def home(request):
     context = {
-        'posts': posts
+        'posts': Post.objects.all()
     }
     return render(request, 'blog/index.html', context)
 

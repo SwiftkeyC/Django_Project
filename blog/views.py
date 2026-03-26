@@ -12,10 +12,19 @@ posts = [
         'author': 'person 2',   
         'title': 'Blog Post 2',
         'content': 'Second post content',
-        'date_posted': timezone.now(),
+        'date_posted': timezone.now()   ,
     }
 ]
-
+subposts = [
+    {
+        'somethingmore': 'description',
+        'somemore': 'someoda'
+    },
+    {
+        'somethingmore': 'description',
+        'somemore': 'soemaf'
+    }
+]
 def home(request):
     context = {
         'posts': posts
@@ -23,4 +32,7 @@ def home(request):
     return render(request, 'blog/index.html', context)
 
 def about(request):
-    return render(request, 'blog/about.html')
+    context = {
+        'subposts': subposts
+    }
+    return render(request, 'blog/about.html', context)

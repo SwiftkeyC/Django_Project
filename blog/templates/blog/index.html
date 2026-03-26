@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title %}
-        <title>Index HTML</title>
-    {%else%}
-        <title>Blog</title>
-    {%endif%}
-</head>
-<body>
-    <section class="container">
-        {% for post in posts %}
-            <h1>{{post.title}}</h1>
-            <p> By {{post.author}} on {{post.date_posted}}</p>
-            <p>{{post.content}}</p>
-        {% endfor %}
-    </section>
-</body>
-</html>
+{%extends "blog/base.html"%}
+{%block content%}
+    {% for i in posts %}
+        <h1>{{i.title}}</h1>
+        <p> By {{i.author}} on {{i.date_posted}}</p><!-- main posts-->
+        <p>{{i.content}}</p>
+    {% endfor %}
+{%endblock content%}
+

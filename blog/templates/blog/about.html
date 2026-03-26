@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title %}
-        <title>About page-description</title>
-    {%else%}
-        <title> About page </title>
-    {%endif%}
-</head>
-<body>
-    <section class="container">
-        about section
-    </section>
-</body>
-</html>
+{%extends "blog/base.html"%}
+
+{%block content%}
+    {%for i in subposts%}
+        <p>{{i.somethingmore}}</p>
+        <p>{{i.somemore}}</p>
+    {%endfor%}
+{%endblock content%}

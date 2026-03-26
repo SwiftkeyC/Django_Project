@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+}
+
+.header {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.nav-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #eee;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.nav-btn.active {
+    background: #cfcfcf;
+}
+
+/* Main */
+.settingsoverview {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* 🔥 THIS centers everything */
+}
+.settingsoverview section {
+    width: 100%;
+    max-width: 900px;   /* adjust if needed */
+}
+
+
+.settingsoverview h2 {
+    text-align: center;
+}
+
+
+/* Themes */
+.theme-grid {
+    justify-content: center;
+}
+
+.morebutton {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+
+.theme {
+    height: 100px;
+    background: #bdbdbd;
+    cursor: pointer;
+}
+
+.theme.selected {
+    outline: 4px solid #555;
+}
+
+/* Illustration */
+.illustrationback {
+    margin: 0 auto;
+}
+
+.illustrationbutton {
+    width: 80px;
+    height: 80px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Wallpapers */
+.wallpapersback {
+    margin: 0 auto;
+}
+
+.choosewallpapers {
+    justify-items: center;
+}
+
+.uploadwallpaper {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+
+.wallpaper {
+    height: 80px;
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.wallpaper.selected {
+    outline: 4px solid #555;
+}
+
+.back-button {
+    align-self: flex-start;      /* keeps it left within centered layout */
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background: #e5e5e5;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-button:hover {
+    background: #d6d6d6;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registrationpage.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>logo</h1>
+
+    <form>
+        <label>Name</label>
+        <input type="text">
+
+        <label>Surname</label>
+        <input type="text">
+
+        <label>Date of Birth</label>
+        <div class="row">
+            <select id = "day">
+                <option value="Day">Day</option>
+                <!-- 1–31 -->
+                <script>
+                    for (let i = 1; i <= 31; i++) {
+                        document.write(`<option>${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select>
+                <option>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+
+            <select>
+                <option>Year</option>
+                <script>
+                    for (let y = 2024; y >= 1940; y--) {
+                        document.write(`<option>${y}</option>`);
+                    }
+                </script>
+            </select>
+        </div>
+
+        <label>Gender</label>
+        <div class="row">
+            <Select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </Select>
+        </div>
+
+        <label>Phone number</label>
+        <input type="text">
+
+        <label>Username</label>
+        <input type="text">
+
+        <label>Password</label>
+        <input type="password">
+
+        <label>Confirm password</label>
+        <input type="password">
+
+        <div class="checkbox">
+            <input type="checkbox">
+            <span>People who use our service may have uploaded your contact information to Facebook. <a href="https://www.facebook.com/help/637205020878504" target="_blank"> Learn more</a>.
+                    
+                By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update" target="_blank">Terms</a>. Learn how we collect, use and share your data in our <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" target="_blank">Privacy Policy</a> and how we use cookies and similar technology in our <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0" target="_blank">Policy</a>. You may receive SMS notifications from us and can opt out at any time.</span>
+        </div>
+
+        <button type="submit">Create account</button>
+    </form>
+</div>
+
+</body>
+</html>

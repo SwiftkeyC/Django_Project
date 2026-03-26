@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+}
+
+/* WRAPPER keeps everything centered */
+.wrapper {
+    width: 100%;
+    max-width: 900px;       /* keeps content squeezed toward center */
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* SIDEBAR */
+.sidebarr {
+    width: 220px;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    height: max-content;
+    border: 1px solid #ccc;
+}
+
+.sidebarr ul {
+    list-style: none;
+}
+
+.sidebarr ul li {
+    padding: 12px 10px;
+    margin-bottom: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebarr ul li:hover {
+    background: #bbb;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* SECTIONS */
+.section {
+    background: #c8c8c8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* INPUTS & FIELDS */
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.field span {
+    width: 20px;
+    height: 20px;
+    background: #b5b5b5;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.field input,
+.input {
+    width: 100%;
+    padding: 12px;
+    background: #dcdcdc;
+    border: none;
+    border-radius: 5px;
+}
+
+/* BUTTONS */
+.btn {
+    width: 100%;
+    background: #e8e8e8;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #d1d1d1;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 25px;
+}
+
+.tvicon{
+    width: 25px;
+    height: 25px;
+}
+
+.icon.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: none;
+    color: black;
+    border: 2px solid #000;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}

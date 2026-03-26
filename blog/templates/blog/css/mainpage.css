@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 25px;
+}
+
+.tvicon{
+    width: 25px;
+    height: 25px;
+}
+
+.icon.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: none;
+    color: black;
+    border: 2px solid #000;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.main {
+    margin-left: 60px;
+    padding: 20px;
+}
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    bottom: 1000px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: #e7e7e7;
+}
+.content-block {
+    width: 970px;
+    height: 1000px;
+    background: white;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    position: absolute;
+    left: 25%;
+}
+.settingsicon {
+    margin-top: auto;
+    height: 25px;
+    width: 25px;
+    bottom: 0;
+}
+.avatar-of-user {
+    background-color: #000;
+}
+
+
+
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+/* MODAL */
+.modal {
+  width: 700px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 50px;
+  text-align: center;
+}
+
+.upload-area {
+  width: 220px;
+  height: 220px;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.select-btn {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  display: none;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settle Account</title>
+    <link rel="stylesheet" href="editaccountpage.css">
+</head>
+<body>
+
+<section class="header">
+    <aside class="sidebar">
+        <button class="nav-btn" data-target="themes">Profile theme</button>
+        <button class="nav-btn" data-target="illustration">Profile illustration</button>
+        <button class="nav-btn" data-target="wallpapers">Profile wallpapers</button>
+    </aside>
+
+    <main class="settingsoverview">
+        <button class="back-button" onclick="history.back()">Back</button>
+        <section class="themes" id="themes">
+            <h2>Choose a profile theme</h2>
+            <div class="theme-grid">
+                <div class="theme theme1"></div>
+                <div class="theme theme2"></div>
+                <div class="theme theme3"></div>
+                <div class="theme theme4"></div>
+            </div>
+            <button class="morebutton">More</button>
+        </section>
+        <section class="illustration" id="illustration">
+            <h2>Upload illustration for profile</h2>
+            <div class="illustrationback">
+                <label class="illustrationbutton">
+                    ↑
+                    <input type="file" accept="image/*" hidden>
+                </label>
+            </div>
+        </section>
+        <section class="wallpapers" id="wallpapers">
+            <h2>Choose or upload a wallpaper</h2>
+
+            <div class="wallpapersback">
+                <div class="choosewallpapers">
+                    <div class="wallpaper wallpaper1"></div>
+                    <div class="wallpaper wallpaper2"></div>
+                    <div class="wallpaper wallpaper3"></div>
+                    <div class="wallpaper wallpaper4"></div>
+                    <div class="wallpaper wallpaper5"></div>
+                    <div class="wallpaper wallpaper6"></div>
+                </div>
+
+                <label class="uploadwallpaper">
+                    Upload wallpaper
+                    <input type="file" accept="image/*" hidden>
+                </label>
+            </div>
+        </section>
+
+    </main>
+</section>
+
+<script src="editaccountpage.js"></script>
+</body>
+</html>

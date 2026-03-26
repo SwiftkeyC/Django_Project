@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 380px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: #e2e2e2;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row input {
+    flex: 1;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 8px 0 15px;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+

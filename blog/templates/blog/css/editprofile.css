@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Back Button */
+.back-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #d9d9d9;
+    border: none;
+    cursor: pointer;
+}
+
+/* Avatar */
+.avatar-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.avatar:hover {
+    opacity: 0.8;
+}
+
+
+.avatar-text {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Form */
+.form-container {
+    width: 40%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container input {
+    padding: 20px;
+    background: #d9d9d9;
+    border: none;
+    font-size: 18px;
+}
+
+.confirm-btn {
+    width: 150px;
+    padding: 10px;
+    background: #d9d9d9;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+

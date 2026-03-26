@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mainpage</title>
+  <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+  <section class = "mainpage">
+    <div class="sidebar">
+        <div class="homebutton">
+          <a href="mainpage.html">
+            <img src="images/home button frame.png">
+          </a>
+        </div>
+        <div class="tvicon">
+          <a href="verificationforchatroulette.html" target="_blank">
+            <img src="images\Tv icon.png">
+          </a>
+        </div>
+        <div class="messagecion">
+          <a href="personalchat.html"> 
+            <img src="images\message icon.png">
+          </a>
+        </div>
+        <div class="icon plus" id="openModal">+</div>
+        <div class = "settings icon">
+          <a href="settings.html" target="_blank">
+            <img src="images/settings icon.png">
+          </a>
+        </div>
+    </div>
+     <div class="main">
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="content-block">
+          <div class="Avatar-of-user">
+            <a href="accountpage.html">
+              <img src="images/useravatarinmainpage.png">
+            </a>
+          </div>
+           uploader's text
+        </div>
+    </div>
+  </section>
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <span>Create Post</span>
+        <span class="close-btn" id="closeModal">✕</span>
+      </div>
+
+      <div class="modal-body">
+        <div class="upload-area">
+          <div class="upload-icon">⬆</div>
+          <div>Drag files here</div>
+        </div>
+
+        <label class="select-btn">
+          Select from computer
+          <input type="file">
+        </label>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="uploadingfile.js"></script>
+</body>
+</html>

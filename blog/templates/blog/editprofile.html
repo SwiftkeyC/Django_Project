@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="content=device-width, initial-scale=1.0">
+    <title>Username Change Page</title>
+    <link rel="stylesheet" href="editprofile.css">
+</head>
+<body>
+    <button class="back-btn" onclick="history.back()">back button</button>
+    <div class="avatar-container">
+        <label for="avatarInput">
+            <div class="avatar" id="avatarPreview"></div>
+        </label>
+        <p class="avatar-text">edit avatar select<br>from file explorer</p>
+        <input type="file" id="avatarInput" accept="image/*" style="display:none;">
+    </div>
+    <div class="form-container">
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Confirm username">
+        <button class="confirm-btn">Confirm button</button>
+    </div>
+    <script src="editpage.js"></script>
+
+</body>
+</html>

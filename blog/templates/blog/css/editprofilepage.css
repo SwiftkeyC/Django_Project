@@ -1,0 +1,131 @@
+/* GENERAL LAYOUT */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+/* TOP BUTTONS SECTION */
+.backgroundofbuttons {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 12px 18px;
+  background: #eeeeee;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #e0e0e0;
+}
+
+/* PROFILE CONTENT AREA */
+.backgroundforprofile {
+  margin-top: 25px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  height: 1080px;
+  width: 880px;
+}
+
+/* THEMES GRID */
+.themesforprofile {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.themesforprofile > div {
+  background: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* ILLUSTRATION UPLOAD */
+.illustratioupload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.uploadbutton {
+  width: 180px;
+  height: 120px;
+  background: #eaeaea;
+  border: 2px dashed #999;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* WALLPAPERS SECTION */
+.wallpapersbackground {
+  margin-top: 20px;
+}
+
+.wallpapers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.wallpapers > div {
+  height: 120px;
+  background: #ddd;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.uploadwallpaperbutton {
+  margin-top: 15px;
+  background: #eeeeee;
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.uploadwallpaperbutton:hover {
+  background: #e0e0e0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
